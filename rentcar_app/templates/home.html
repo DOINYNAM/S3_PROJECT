@@ -1,0 +1,58 @@
+<html>
+
+<body bgcolor=b6f9d5>
+
+    <center>
+        <br>
+        <img src="{{url_for('static', filename='img/1.jpg')}}">
+        <h1> 제주도 렌트카는 얼마CAR? </h1><br>
+        <form method="POST" , action="{{url_for('pred')}}">
+            <b> 차종 : <select name='차종'>
+                    <option value="소형">소형</option>
+                    <option value="중소형">중소형</option>
+                    <option value="중형">중형</option>
+                    <option value="고급">고급</option>
+                    <option value="SUV/승합">SUV/승합</option>
+
+                </select> <br><br>
+                연료 : <select name='연료'>
+                    <option value="휘발유">휘발유</option>
+                    <option value="LPG">LPG</option>
+                    <option value="경유">경유</option>
+                    <option value="전기">전기</option>
+                    <option value="하이브리드">하이브리드</option>
+
+                </select> <br><br>
+                탑승 인원 : <select name='탑승 인원'>
+                    <option value="2">2</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="15">15</option>
+
+                </select> <br><br>
+                국산/외 분류 : <select name='국산/외 분류'>
+                    <option value="국산">국산</option>
+                    <option value="수입">수입</option>
+
+                </select> <br><br>
+                렌트 이용 계절 : <select name='렌트 이용 계절'>
+                    <option value="봄">봄</option>
+                    <option value="여름">여름</option>
+                    <option value="가을">가을</option>
+                    <option value="겨울">겨울</option>
+                </select> <br><br><br>
+            </b>
+            <input type="submit" , value='확인하기'>
+        </form>
+
+    </center>
+
+</body>
+
+</html>

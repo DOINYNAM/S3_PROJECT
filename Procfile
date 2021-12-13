@@ -1,0 +1,1 @@
+web: qunicorn --workers=1 'flask_app:rentcar_app()'
